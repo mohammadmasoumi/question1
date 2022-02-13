@@ -1,0 +1,17 @@
+<html>
+<header>
+    <title>products</title>
+</header>
+<body>
+{% for x,y in data.items %}
+        <div>
+            {% for i,j  in picture.items %}
+            <img src="{{j}}" width="150">
+            {% endfor %}
+        <p><i>it's name : {{x}} </i></p>
+        <p><i>it's price : {{y}} </i></p>
+            <hr>
+        </div>
+{% endfor %}
+</body>
+</html>
